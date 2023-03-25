@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>Document</title>
   </head>
   <body>
@@ -39,14 +40,26 @@
           <li><a class="main-nav-link" href="#">Why Comono</a></li>
           <li><a class="main-nav-link" href="#">Contact Us</a></li>
         </ul>
+
+        <div>
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link nav-cta" href="#">Log in</a></li>
+            <li><a class="main-nav-link nav-cta-2" href="#">Sign up</a></li>
+          </ul>
+        </div>
       </nav>
 
-      <nav class="main-nav">
+      <!-- <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link nav-cta" href="#">Log in</a></li>
           <li><a class="main-nav-link nav-cta-2" href="#">Sign up</a></li>
         </ul>
-      </nav>
+      </nav> -->
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -66,7 +79,7 @@
           </div>
 
           <div>
-            <img class="into-img" src="img/Group 42.png" alt="" />
+            <img class="intro-img" src="img/Group 42.png" alt="" />
           </div>
         </div>
       </section>
@@ -137,13 +150,13 @@
               </div>
             </div>
 
-            <div>
+            <div class="get-report">
               <img
                 class="images"
                 src="img/petition_1-removebg-preview.png"
                 alt="smart-phone-logo"
               />
-              <div>
+              <div class="get-report">
                 <h4 class="heading-tertiary">Get Reports</h4>
                 <p class="paragraph">
                   Comono gives you credible reports that enable you make smart
@@ -173,79 +186,87 @@
           <h3 class="product-heading">Address Validation and Verification</h3>
 
           <div class="product-container">
-            <ul class="product-details">
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="#000000"
-                  class="icon"
-                  viewBox="0 0 256 256"
-                >
-                  <path
-                    d="M149.61,85.71l-89.6,88a8,8,0,0,1-11.22,0L10.39,136a8,8,0,1,1,11.22-11.41L54.4,156.79l84-82.5a8,8,0,1,1,11.22,11.42Zm96.1-11.32a8,8,0,0,0-11.32-.1l-84,82.5-18.83-18.5a8,8,0,0,0-11.21,11.42l24.43,24a8,8,0,0,0,11.22,0l89.6-88A8,8,0,0,0,245.71,74.39Z"
-                  ></path>
-                </svg>
+            <div>
+              <ul class="product-details">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M149.61,85.71l-89.6,88a8,8,0,0,1-11.22,0L10.39,136a8,8,0,1,1,11.22-11.41L54.4,156.79l84-82.5a8,8,0,1,1,11.22,11.42Zm96.1-11.32a8,8,0,0,0-11.32-.1l-84,82.5-18.83-18.5a8,8,0,0,0-11.21,11.42l24.43,24a8,8,0,0,0,11.22,0l89.6-88A8,8,0,0,0,245.71,74.39Z"
+                    ></path>
+                  </svg>
 
-                <p class="product-paragraph">
-                  <strong>Address Validation</strong> - Easily confirm validity
-                  of addresses using our service to conduct in-person physical
-                  validation across Africa.
-                </p>
-              </li>
+                  <p class="product-paragraph">
+                    <strong>Address Validation</strong> - Easily confirm
+                    validity of addresses using our service to conduct in-person
+                    physical validation across Africa.
+                  </p>
+                </li>
 
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="#000000"
-                  class="icon"
-                  viewBox="0 0 256 256"
-                >
-                  <path
-                    d="M149.61,85.71l-89.6,88a8,8,0,0,1-11.22,0L10.39,136a8,8,0,1,1,11.22-11.41L54.4,156.79l84-82.5a8,8,0,1,1,11.22,11.42Zm96.1-11.32a8,8,0,0,0-11.32-.1l-84,82.5-18.83-18.5a8,8,0,0,0-11.21,11.42l24.43,24a8,8,0,0,0,11.22,0l89.6-88A8,8,0,0,0,245.71,74.39Z"
-                  ></path>
-                </svg>
-                <p class="product-paragraph">
-                  <strong>Instant Address Verification</strong>
-                  - Instantly verify addresses in minutes using the Comono
-                  i-Confirm database.
-                </p>
-              </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M149.61,85.71l-89.6,88a8,8,0,0,1-11.22,0L10.39,136a8,8,0,1,1,11.22-11.41L54.4,156.79l84-82.5a8,8,0,1,1,11.22,11.42Zm96.1-11.32a8,8,0,0,0-11.32-.1l-84,82.5-18.83-18.5a8,8,0,0,0-11.21,11.42l24.43,24a8,8,0,0,0,11.22,0l89.6-88A8,8,0,0,0,245.71,74.39Z"
+                    ></path>
+                  </svg>
+                  <p class="product-paragraph">
+                    <strong>Instant Address Verification</strong>
+                    - Instantly verify addresses in minutes using the Comono
+                    i-Confirm database.
+                  </p>
+                </li>
 
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="#000000"
-                  class="icon"
-                  viewBox="0 0 256 256"
-                >
-                  <path
-                    d="M149.61,85.71l-89.6,88a8,8,0,0,1-11.22,0L10.39,136a8,8,0,1,1,11.22-11.41L54.4,156.79l84-82.5a8,8,0,1,1,11.22,11.42Zm96.1-11.32a8,8,0,0,0-11.32-.1l-84,82.5-18.83-18.5a8,8,0,0,0-11.21,11.42l24.43,24a8,8,0,0,0,11.22,0l89.6-88A8,8,0,0,0,245.71,74.39Z"
-                  ></path>
-                </svg>
-                <p class="product-paragraph">
-                  <strong>Address Autocomplete</strong>
-                  - Autocomplete addresses at the point - of - entry with
-                  correct data integration with your workflow using our
-                  autocomplete API.
-                </p>
-              </li>
-            </ul>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M149.61,85.71l-89.6,88a8,8,0,0,1-11.22,0L10.39,136a8,8,0,1,1,11.22-11.41L54.4,156.79l84-82.5a8,8,0,1,1,11.22,11.42Zm96.1-11.32a8,8,0,0,0-11.32-.1l-84,82.5-18.83-18.5a8,8,0,0,0-11.21,11.42l24.43,24a8,8,0,0,0,11.22,0l89.6-88A8,8,0,0,0,245.71,74.39Z"
+                    ></path>
+                  </svg>
+                  <p class="product-paragraph">
+                    <strong>Address Autocomplete</strong>
+                    - Autocomplete addresses at the point - of - entry with
+                    correct data integration with your workflow using our
+                    autocomplete API.
+                  </p>
+                </li>
+              </ul>
+            </div>
 
-            <img class="p-logo" src="img/image 20.png" alt="photo of a house" />
-          </div>
+            <div class="product-img-box">
+              <img
+                class="p-logo"
+                src="img/image 20.png"
+                alt="photo of a house"
+              />
+            </div>
 
-          <div class="product-container">
-            <img
-              class="p-logo"
-              src="img/image 17.png"
-              alt="photo of the internet"
-            />
+            <div class="product-img-box">
+              <img
+                class="p-logo"
+                src="img/image 17.png"
+                alt="photo of the internet"
+              />
+            </div>
 
             <div>
               <h3 class="product-headings">Identity Verification</h3>
@@ -255,9 +276,7 @@
                 hires.
               </p>
             </div>
-          </div>
 
-          <div class="product-container">
             <div>
               <h3 class="product-headings">Project Verification</h3>
               <p class="product-paragraph">
@@ -269,11 +288,13 @@
               </p>
             </div>
 
-            <img
-              class="p-logo"
-              src="img/image 19.png"
-              alt="photo of the internet"
-            />
+            <div class="product-img-box">
+              <img
+                class="p-logo"
+                src="img/image 19.png"
+                alt="photo of the internet"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -365,7 +386,7 @@
               </div>
             </div>
 
-            <div class="solution-description">
+            <div class="solution-description solution">
               <img
                 src="img/like_1-removebg-preview.png"
                 alt="a photo of a bag of money"
@@ -385,7 +406,7 @@
             Comono has you covered from all sides
           </h2>
 
-          <div class="solution-main">
+          <div class="service-main-1">
             <div>
               <img
                 class="icons"
@@ -411,7 +432,7 @@
               </p>
             </div>
 
-            <div>
+            <div class="scalable-solutions">
               <img
                 class="icons"
                 src="img/compliant 1.png"
@@ -444,7 +465,7 @@
         <div class="container">
           <h2 class="solution-heading">Join thousands others using Comono</h2>
 
-          <div class="solution-main">
+          <div class="user-main">
             <div>
               <div class="users-description">
                 <div>
@@ -506,7 +527,32 @@
                   <p class="user-paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Donec et egestas lorem. Nulla venenatis semper tortor in
-                    cursus Nulla venenatis Nulla venenatis.
+                    cursus Nulla venenatis Nulla venenatisdddd.
+                  </p>
+                </div>
+              </div>
+
+              <div class="user-ceo">
+                <img src="img/Ellipse 2.png" alt="photo of Atanda Damilare" />
+                <div>
+                  <p class="user-name"><strong>Atanda Damilare</strong></p>
+                  <p class="user-title">CEO Access Bank</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="users-description">
+                <div>
+                  <div class="user-heading">
+                    <img src="img/Vector 2.png" alt="photo of a ball" />
+                    <p><strong>logoipsum</strong></p>
+                  </div>
+
+                  <p class="user-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec et egestas lorem. Nulla venenatis semper tortor in
+                    cursus Nulla venenatis Nulla venenatisdddd.
                   </p>
                 </div>
               </div>
@@ -524,74 +570,92 @@
       </section>
 
       <footer class="footer">
-        <div class="container">
-          <div class="footer-body">
+        <div class="container grid--footer">
+          <div class="logo-col">
             <div>
-              <img
-                class="footer-logo"
-                src="img/WhatsApp_Image_2022-05-16_at_9.52 1 (1).png"
-                alt="comono-logo"
-              />
+              <a class="footer-logo" href="#">
+                <img
+                  class="footer-logo"
+                  src="img/WhatsApp_Image_2022-05-16_at_9.52 1 (1).png"
+                  alt="comono-logo"
+                />
+              </a>
+
               <p class="footer-paragraph">We help you check fast and do more</p>
 
-              <address class="contacts">
-                <p class="address">1A Hughues Avenue, Yaba Lagos, Nigeria</p>
-                <p>
-                  <a class="footer-link" href="mailto:hello@omnifood.com"
-                    >help@comono.io</a
-                  >
-                  <br />
-                  <a class="footer-link" href="tel:415-201-6370"
-                    >+234 803 430 8466</a
-                  >
-                  <br />
-                </p>
-              </address>
+              <div class="address-col">
+                <address class="contacts">
+                  <p class="address">1A Hughues Avenue, Yaba Lagos, Nigeria</p>
+                  <p>
+                    <a class="footer-link" href="mailto:hello@omnifood.com"
+                      >help@comono.io</a
+                    >
+                    <br />
+                    <a class="footer-link" href="tel:415-201-6370"
+                      >+234 803 430 8466</a
+                    >
+                    <br />
+                  </p>
+                </address>
+              </div>
             </div>
-
-            <div class="nav-col">
-              <p class="footer-heading">Quick Links</p>
-              <ul class="footer-nav">
-                <li>Verify an address</li>
-                <li>Proof of address</li>
-                <li>Check My project</li>
-                <li>Sign Up</li>
-                <li>Login</li>
-              </ul>
-            </div>
-
-            <nav class="nav-col">
-              <p class="footer-heading">Resources</p>
-              <ul class="footer-nav">
-                <li><a class="footer-link" href="#">About</a></li>
-                <li><a class="footer-link" href="#">Press</a></li>
-                <li><a class="footer-link" href="#">Careers</a></li>
-                <li><a class="footer-link" href="#">Partners</a></li>
-              </ul>
-            </nav>
-
-            <nav class="nav-col">
-              <p class="footer-heading">Socials</p>
-              <ul class="footer-nav">
-                <li>
-                  <a class="footer-link social-media" href="#">Facebook</a>
-                </li>
-                <li>
-                  <a class="footer-link social-media" href="#">Twitter</a>
-                </li>
-                <li>
-                  <a class="footer-link social-media" href="#">Instagram</a>
-                </li>
-              </ul>
-            </nav>
           </div>
 
-          <p class="copyright">
-            copyright &copy; <span class="year">2027</span> Comono, Inc. All
-            rights reserved.
-          </p>
+          <div class="nav-col">
+            <p class="footer-heading">Quick Links</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Verify an address</a></li>
+              <li><a class="footer-link" href="#">Proof of address</a></li>
+              <li><a class="footer-link" href="#">Check My project</a></li>
+              <li><a class="footer-link" href="#"> Sign Up</a></li>
+              <li><a class="footer-link" href="#"> Login</a></li>
+            </ul>
+          </div>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">About</a></li>
+              <li><a class="footer-link" href="#">Press</a></li>
+              <li><a class="footer-link" href="#">Careers</a></li>
+              <li><a class="footer-link" href="#">Partners</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Socials</p>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link social-media" href="#">Facebook</a>
+              </li>
+              <li>
+                <a class="footer-link social-media" href="#">Twitter</a>
+              </li>
+              <li>
+                <a class="footer-link social-media" href="#">Instagram</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+
+        <p class="copyright">
+          copyright &copy; <span class="year">2027</span> Comono, Inc. All
+          rights reserved.
+        </p>
       </footer>
     </main>
   </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="script.js"></script>
+  <script
+    defer
+    src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+  ></script>
 </html>

@@ -1,0 +1,546 @@
+/*****************************************/
+/* BELOW 1344px (84*16) SMALLER DESKTOPS
+/*****************************************/
+
+/* 1350 (breakpoint) / 16 (default font size) = 84.375 app 84 */
+@media (max-width: 84em) {
+  .intro {
+    max-width: 120rem;
+  }
+
+  .intro-heading {
+    font-size: 4.4rem;
+  }
+}
+
+/*****************************************/
+/* BELOW 1200 (75*16) LANDSCAPE TABLETS
+/*****************************************/
+
+/* 1200 (breakpoint) / 16 = 75  */
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 56.25%  */
+    font-size: 56.25%;
+  }
+
+  .intro {
+    gap: 4.8rem;
+  }
+
+  .header {
+    padding: 4rem;
+  }
+
+  .main-nav-list {
+    gap: 2rem;
+  }
+}
+
+/**************************/
+/* BELOW 992px (Tablets) */
+/**************************/
+
+@media (max-width: 62em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 45%;
+  }
+
+  .intro {
+    gap: 6.4rem;
+  }
+
+  .intro-heading {
+    font-size: 4rem;
+  }
+
+  /* .intro-img {
+    width: 95%;
+  } */
+
+  .intro-paragraph {
+    font-size: 1.6rem;
+  }
+
+  .sub-paragraph {
+    font-size: 1.4rem;
+  }
+
+  .solution-description span {
+    font-size: 4rem;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    /* background-color: #dad2d2; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in;
+
+    /* HIDE NAVIGATION */
+    /* Allows no transitions at all */
+    /* display: none; */
+
+    /* 1}Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 3.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/**********************************************/
+/* BELOW 752px (44 * 16 ) Smaller tablets */
+/***********************************************/
+
+/* 750 / 16 = 46.875 = 50 */
+
+@media (max-width: 50em) {
+  .intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 0 10rem;
+  }
+
+  .intro-heading {
+    font-size: 5rem;
+  }
+
+  .intro-paragraph {
+    font-size: 2rem;
+    padding: 0 5rem;
+  }
+
+  .intro-img {
+    width: 80%;
+  }
+
+  .section-intro {
+    padding: 4.8rem 0 6rem 0;
+  }
+
+  .heading-featured-in {
+    font-size: 3rem;
+  }
+
+  .heading-description {
+    padding: 0 10rem;
+    font-size: 2.4rem;
+  }
+
+  .sub-description {
+    padding: 0 15rem;
+  }
+
+  .sub-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .heading-featured {
+    font-size: 3rem;
+  }
+
+  .description {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 0 2.8rem;
+  }
+
+  .get-report {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 0 2rem;
+  }
+
+  .images {
+    width: 20%;
+  }
+
+  .heading-tertiary {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .paragraph {
+    font-size: 1.8rem;
+  }
+
+  .product-description {
+    font-size: 2.2rem;
+    padding: 0 10rem;
+  }
+
+  .product-heading {
+    font-size: 2rem;
+  }
+
+  .product-paragraph strong {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .product-paragraph {
+    font-size: 2rem;
+  }
+
+  .why-container {
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0 4rem;
+    text-align: center;
+  }
+
+  .why-heading {
+    grid-column: 1 / -1;
+    justify-self: center;
+    text-align: center;
+    padding: 0 3rem;
+  }
+
+  .line-top {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .why-paragraph {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+  }
+
+  .why-description {
+    text-align: center;
+  }
+
+  .solution-heading {
+    padding: 0 5rem;
+    font-size: 3rem;
+  }
+
+  .images {
+    width: 13rem;
+  }
+
+  .solution-main {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 0 2.8rem;
+  }
+
+  .solution {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 0 3rem;
+  }
+
+  .solution-description span {
+    font-size: 3.5rem;
+  }
+
+  .solution-description p {
+    font-size: 1.6rem;
+  }
+
+  .service-main-1 {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 0 2.8rem;
+  }
+
+  .scalable-solutions {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 0 3rem;
+  }
+
+  .icons {
+    width: 10rem;
+  }
+
+  .service-sub-heading {
+    font-size: 2.2rem;
+  }
+
+  .service-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .user-main {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    text-align: center;
+    padding: 0 4rem;
+  }
+
+  .user-heading strong {
+    font-size: 1.8rem;
+  }
+
+  .user-paragraph {
+    font-size: 1.6rem;
+  }
+
+  .user-name {
+    font-size: 1.4rem;
+  }
+
+  .user-title {
+    font-size: 1.2rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15rem;
+    row-gap: 8rem;
+  }
+
+  .footer-paragraph {
+    font-size: 1.6rem;
+  }
+
+  .contacts {
+    font-size: 1.8rem;
+  }
+
+  .footer-heading {
+    font-size: 2rem;
+  }
+
+  .footer-nav {
+    font-size: 1.8rem;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 2rem;
+  }
+
+  .copyright {
+    font-size: 1.6rem;
+  }
+}
+
+/**********************************/
+/* BELOW 544px (34* 16) Phones */
+/*********************************/
+
+/* 550 / 16 = 34.375 = 34*/
+
+@media (max-width: 34em) {
+  .section-intro {
+    padding: 2.8rem 0 2rem 0;
+  }
+
+  .intro-heading {
+    font-size: 3rem;
+  }
+
+  .intro-img {
+    width: 100%;
+  }
+
+  .intro-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .logos img {
+    height: 3rem;
+  }
+
+  .heading-featured-in {
+    font-size: 2.6rem;
+  }
+
+  .heading-featured {
+    font-size: 2.6rem;
+  }
+
+  .heading-description {
+    padding: 0 5rem;
+    font-size: 2.4rem;
+  }
+
+  .sub-description {
+    padding: 0 8rem;
+  }
+
+  .sub-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    grid-template-columns: 1fr;
+    padding: 0 3rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.6rem;
+  }
+
+  .paragraph {
+    font-size: 2.2rem;
+  }
+
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+
+  .product-img-box {
+    text-align: center;
+  }
+
+  .product-img-box:nth-child(1) {
+    grid-row: 1;
+  }
+
+  .product-img-box:nth-child(3) {
+    grid-row: 4;
+  }
+
+  .product-img-box:nth-child(6) {
+    grid-row: 6;
+  }
+
+  .product-description {
+    font-size: 2rem;
+    padding: 0 5rem;
+  }
+
+  .product-heading {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .product-paragraph strong {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  .product-paragraph {
+    font-size: 2.2rem;
+  }
+
+  .product-headings {
+    font-size: 2.4rem;
+  }
+
+  .p-logo {
+    width: 80%;
+  }
+
+  .why-paragraph {
+    font-size: 2.4rem;
+  }
+
+  .why-logos p {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .why-logo {
+    height: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .line-2 {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .solution-main {
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-column: 1 / -1;
+  }
+
+  .solution-heading {
+    font-size: 2.5rem;
+  }
+
+  .service-main-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .service-sub-heading {
+    font-size: 2.4rem;
+  }
+
+  .service-paragraph {
+    font-size: 2rem;
+  }
+
+  .user-main {
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: left;
+    padding: 0 4rem;
+  }
+
+  .user-heading strong {
+    font-size: 2rem;
+  }
+
+  .user-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .user-name {
+    font-size: 1.6rem;
+  }
+
+  .user-title {
+    font-size: 1.4rem;
+  }
+
+  .grid--footer {
+    /* grid-template-columns: 1fr 1fr; */
+    /* text-align: center; */
+    /* column-gap: 10rem; */
+    /* row-gap: 8rem; */
+  }
+}

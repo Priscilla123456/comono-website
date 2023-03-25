@@ -11,6 +11,7 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* percentage of user's browers font-size seetings */
   font-size: 62.5%;
+  overflow-x: hidden;
 
   /* Does not work on safari and maybe Edge */
   /* scroll-behavior: smooth; */
@@ -22,8 +23,7 @@ body {
   font-weight: 400;
   color: #000;
   box-sizing: border-box;
-
-  /* background-color: #000; */
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -47,6 +47,7 @@ body {
   align-items: center;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .header-logo {
@@ -67,10 +68,17 @@ body {
 /* NAVIGATION */
 /* ********************** * */
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 15rem;
+}
+
 .main-nav-list {
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 2.6rem;
   list-style: none;
 }
 
@@ -82,6 +90,7 @@ body {
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
+  font-weight: 700;
 }
 
 .main-nav-link:hover,
@@ -113,6 +122,26 @@ body {
 .main-nav-link.nav-cta-2:hover,
 .main-nav-link.nav-cta-2:active {
   background-color: #2d8ee2;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* ********************** */
@@ -168,6 +197,7 @@ body {
   line-height: 1.6;
   margin-bottom: 4.8rem;
   font-weight: 700;
+  padding: 0 1rem;
 }
 
 .btn-link:link,
@@ -209,7 +239,7 @@ body {
   margin-right: 1.6rem;
 }
 
-.into-img {
+.intro-img {
   width: 100%;
 }
 
@@ -250,8 +280,7 @@ body {
 }
 
 .heading-description {
-  max-width: 60rem;
-  margin: 0 auto;
+  padding: 0 25rem;
   font-size: 2.2rem;
   text-align: center;
   line-height: 1.5;
@@ -264,9 +293,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 50rem;
-  margin: 0 auto;
+  padding: 0 32rem;
   margin-bottom: 7rem;
+  gap: 1rem;
 }
 
 .sub-paragraph {
@@ -311,6 +340,7 @@ body {
   font-weight: 500;
   text-align: center;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .line-container {
@@ -322,16 +352,16 @@ body {
   height: 0.2rem;
   background-color: #008aff;
   margin: auto;
-  position: absolute;
+  /* position: absolute;
   left: 55rem;
-  top: 13rem;
+  top: 13rem; */
 }
 
 .product-description {
   font-size: 2.2rem;
   text-align: center;
-  max-width: 80rem;
-  margin: 0 auto;
+
+  padding: 0 18rem;
   line-height: 1.5;
   margin-bottom: 8rem;
 }
@@ -339,16 +369,15 @@ body {
 .product-heading {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2rem;
   letter-spacing: 0.75px;
 }
 
 .product-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  line-height: 1.5;
-  gap: 9.6rem;
-  margin-bottom: 5rem;
+  column-gap: 7.6rem;
+  row-gap: 5rem;
 }
 
 .product-details {
@@ -381,10 +410,12 @@ body {
 
 .product-paragraph {
   font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 .p-logo {
-  width: 40%;
+  width: 90%;
+  height: auto;
   border-radius: 9px;
 }
 
@@ -408,8 +439,7 @@ body {
 .why-container {
   display: flex;
   gap: 20rem;
-  max-width: 100rem;
-  margin: 0 auto;
+  padding: 0 4rem;
 }
 
 .line-top {
@@ -439,15 +469,17 @@ body {
   margin-bottom: 4rem;
 }
 
+.why-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+}
+
 .why-logos p {
   font-size: 1.8rem;
   font-weight: 700;
-}
-
-.why-logos {
-  display: flex;
-  align-items: center;
-  gap: 20rem;
 }
 
 .why-logo {
@@ -485,8 +517,7 @@ body {
 .solution-heading {
   font-size: 2.2rem;
   text-align: center;
-  max-width: 60rem;
-  margin: 0 auto;
+  padding: 0 25rem;
   line-height: 1.5;
   margin-bottom: 8rem;
 }
@@ -522,6 +553,12 @@ body {
   padding: 5rem 0;
 }
 
+.service-main-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
 .service-sub-heading {
   font-size: 1.4rem;
   margin-top: 1.5rem;
@@ -530,7 +567,7 @@ body {
 
 .service-paragraph {
   font-size: 1.4rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 /* ********************** */
@@ -553,6 +590,12 @@ body {
   padding: 7rem 0;
 }
 
+.user-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
 .users-description {
   display: flex;
   align-items: center;
@@ -572,6 +615,7 @@ body {
 .user-paragraph {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
 .user-ceo {
@@ -595,15 +639,28 @@ body {
   color: #fff;
 }
 
-.footer-body {
+.grid--footer {
   display: grid;
-  grid-template-columns: 2fr 1.5fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 10rem;
 }
 
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-logo {
+  display: block;
   margin-bottom: 2rem;
-  /* color: linear-gradient(to right, #008aff, #fff); */
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
 }
 
 .footer-paragraph {
@@ -616,16 +673,11 @@ body {
   font-style: normal;
   font-size: 1.4rem;
   line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .address {
   margin-bottom: 2.4rem;
-}
-
-.footer-heading {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 4rem;
 }
 
 .footer-nav {
