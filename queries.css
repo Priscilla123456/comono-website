@@ -80,7 +80,8 @@
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.6);
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    background-color: #eee;
     /* background-color: #dad2d2; */
     position: absolute;
     top: 0;
