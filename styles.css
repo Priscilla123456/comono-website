@@ -12,9 +12,6 @@ html {
   /* percentage of user's browers font-size seetings */
   font-size: 62.5%;
   overflow-x: hidden;
-  /* scroll-behavior: smooth; */
-  /* Does not work on safari and maybe Edge */
-  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -144,6 +141,7 @@ body {
 }
 
 /* Sticky Navigation */
+
 .sticky .header {
   position: fixed;
   top: 0;
@@ -542,6 +540,7 @@ body {
 .solution-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
   gap: 5rem;
 }
 
@@ -563,7 +562,7 @@ body {
 }
 
 /* ********************** */
-/*  SECTION SOLUTION */
+/*  SECTION SERVICE */
 /* ********************** * */
 
 .section-service {
@@ -572,6 +571,7 @@ body {
 
 .service-main-1 {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
 }
