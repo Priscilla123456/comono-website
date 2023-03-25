@@ -81,8 +81,10 @@
 
   .main-nav {
     /* background-color: rgba(255, 255, 255, 0.6); */
-    background-color: #eee;
     /* background-color: #dad2d2; */
+    /* background-color: #fbfafa; */
+    background-color: #eee;
+    /* background-color: #000; */
     position: absolute;
     top: 0;
     left: 0;
