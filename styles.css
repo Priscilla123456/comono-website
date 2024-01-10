@@ -273,17 +273,213 @@ body {
   text-align: center;
   margin-bottom: 5rem;
   font-weight: 700;
+  animation: moveintop 0.7s ease-in-out;
+}
+
+@keyframes moveintop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/*
+.explore-more {
+  font-size: 2.5rem;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 700;
+  animation: moveintop 0.7s ease-in-out 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveintop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+.sign-up {
+  font-size: 2.5rem;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 700;
+  animation: moveintop 0.7s ease-in-out 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveintop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+*/
+
+/* The last one */
+/* .logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  animation: scroll 5s linear infinite;
+}
+
+.slide img {
+  height: 4rem;
+  padding: 0 3rem 0 3rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-100%);
+  }
+} */
+
+/* the static one  */
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slide {
+  height: 6rem;
 }
 
 .logos {
-  display: flex;
+  /* for the second video */
+  /* display: flex;
   align-items: center;
   justify-content: space-around;
+  overflow: hidden; */
+  /* for the first video */
+  /* animation: scroll 15s linear infinite; */
+  /* width: calc(120px * 14);
+  overflow: hidden; */
 }
 
-.logos img {
-  height: 4rem;
+/* for the second video */
+/* .logos:hover .slide {
+  animation-play-state: paused;
 }
+
+.slide {
+  height: 10rem;
+  animation: scroll 10s linear infinite;
+} */
+
+/* for the second video */
+/* @keyframes scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-1100px, 0, 0);
+  }
+} */
+
+/* for the first video */
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-200px * 7));
+  }
+} */
+
+/* for the first video */
+/* .logos {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  margin: auto;
+  position: relative;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.logos .logos-track {
+  animation: scroll 40s linear infinite;
+
+  width: calc(250px * 14);
+}
+
+.logos .slide {
+  height: 4rem;
+  width: 4rem;
+} */
+
+/* for the third video */
+/* .slide-track {
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  perspective: 100px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+} */
 
 /* ********************** */
 /* HOW IT WORKS SECTION */
@@ -475,7 +671,6 @@ body {
   display: block;
   font-size: 5rem;
   font-weight: 700;
-  color: #fff;
 }
 
 .why-paragraph {
