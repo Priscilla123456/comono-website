@@ -381,17 +381,17 @@ body {
   height: 6rem;
 }
 
-.logos {
-  /* for the second video */
-  /* display: flex;
+/* .logos {
+
+  display: flex;
   align-items: center;
   justify-content: space-around;
-  overflow: hidden; */
-  /* for the first video */
-  /* animation: scroll 15s linear infinite; */
-  /* width: calc(120px * 14);
-  overflow: hidden; */
-}
+  overflow: hidden;
+
+  animation: scroll 15s linear infinite;
+  width: calc(120px * 14);
+  overflow: hidden;
+} */
 
 /* for the second video */
 /* .logos:hover .slide {
